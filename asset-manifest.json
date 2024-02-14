@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/c-exercise/static/css/main.b3622355.css",
-    "main.js": "/c-exercise/static/js/main.9b38b5c0.js",
+    "main.css": "/c-exercise/static/css/main.0183950e.css",
+    "main.js": "/c-exercise/static/js/main.52c776b1.js",
     "static/js/592.ab10394c.chunk.js": "/c-exercise/static/js/592.ab10394c.chunk.js",
     "static/media/file-import-light.svg": "/c-exercise/static/media/file-import-light.2a4797b4e5d8300a02eed5be506f4828.svg",
     "static/media/copy-light.svg": "/c-exercise/static/media/copy-light.eae1a99504e7e334d7008eae759e751b.svg",
     "index.html": "/c-exercise/index.html",
     "static/media/hexagon.svg": "/c-exercise/static/media/hexagon.5b526af586f67e660bca2a51a525e15c.svg",
     "static/media/check-light.svg": "/c-exercise/static/media/check-light.01adbabc8079b123582aa8b0d059e4f9.svg",
-    "main.b3622355.css.map": "/c-exercise/static/css/main.b3622355.css.map",
-    "main.9b38b5c0.js.map": "/c-exercise/static/js/main.9b38b5c0.js.map",
+    "main.0183950e.css.map": "/c-exercise/static/css/main.0183950e.css.map",
+    "main.52c776b1.js.map": "/c-exercise/static/js/main.52c776b1.js.map",
     "592.ab10394c.chunk.js.map": "/c-exercise/static/js/592.ab10394c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3622355.css",
-    "static/js/main.9b38b5c0.js"
+    "static/css/main.0183950e.css",
+    "static/js/main.52c776b1.js"
   ]
 }
