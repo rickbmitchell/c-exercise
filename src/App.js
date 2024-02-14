@@ -22,7 +22,14 @@ function App() {
           <div className="col-sm card-wrapper">
             <Card
               headline="From Scanned Data"
-              description={<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <strong>ut labore et dolore magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud exercitation.</p>}
+              description={
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt{" "}
+                  <strong>ut labore et dolore magna aliqua</strong>. Ut enim ad
+                  minim veniam, quis nostrud exercitation.
+                </p>
+              }
               icon="check"
               button
               buttonId="scan-data"

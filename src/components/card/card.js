@@ -29,7 +29,11 @@ const Card = ({
           <div className="card__warning">{warningText}</div>
         </div>
       )}
-      <div className="card__icon-container">
+      <div
+        className={`card__icon-container ${
+          warning ? "card__icon-container--warning" : ""
+        }`}
+      >
         <span className="card__icon-wrapper">
           <div className="card__icon-wrapper--icon">
             <img src={IconHex} is="svg" alt="hexagon icon" />
@@ -53,14 +57,14 @@ const Card = ({
       </div>
       {button && (
         <div className="card__button-wrapper">
-            <button
-              onClick={onClickOne}
-              className="card__button"
-              id={buttonId}
-              type="button"
-            >
-              {buttonText}
-            </button>
+          <button
+            onClick={onClickOne}
+            className="card__button"
+            id={buttonId}
+            type="button"
+          >
+            {buttonText}
+          </button>
           {buttonTwo && (
             <button
               onClick={onClickTwo}

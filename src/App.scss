@@ -17,7 +17,8 @@
   }
 
   .card-container {
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    margin: 0 auto;
   }
 
   .exercise-page__divider {
@@ -43,7 +44,6 @@
 
 @media screen and (max-width: 991px) {
   .card-container {
-    text-align: center;
     .card-wrapper {
       display: flex;
       justify-content: center;
