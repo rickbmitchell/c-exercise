@@ -1,0 +1,61 @@
+@use "styles/_colors.scss" as *;
+@import "~bootstrap/scss/bootstrap";
+
+.exercise-page {
+  text-align: center;
+  background-color: $backgroundNeutral;
+  min-height: 100vh;
+  padding: 1rem 0;
+
+  .exercise-page__heading {
+    font-size: 2.25rem;
+    font-weight: 400;
+  }
+
+  .exercise-page__intro-text {
+    margin-bottom: 2rem;
+  }
+
+  .card-container {
+    margin-bottom: 2rem;
+  }
+
+  .exercise-page__divider {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+  }
+
+  .exercise-page__link {
+    color: $linkColor;
+    text-decoration: none;
+    &:hover {
+      color: lighten($linkColor, 10%);
+    }
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .card-container .col-sm:nth-of-type(3) .card {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .card-container {
+    text-align: center;
+    .card-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+    .col-sm:nth-of-type(2) .card {
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .exercise-page .exercise-page__intro-text {
+    text-align: left;
+  }
+}

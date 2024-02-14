@@ -1,0 +1,114 @@
+@use "../../styles/colors" as *;
+
+.card {
+  width: 400px;
+  background-color: $backgroundSubtlest;
+  border: $border;
+  border-radius: $borderRadius;
+  padding: 1rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: $boxShadow;
+
+  &.card--warning {
+    padding-top: 0;
+  }
+
+  .card__warning-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 0.75rem;
+    width: 100%;
+    height: 20px;
+
+    .card__warning {
+      background-color: #fee4ac;
+      width: 25%;
+      color: #934e13;
+      font-size: 0.75rem;
+      font-weight: bold;
+      padding: 0.5rem;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .card__icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+
+    .card__icon-wrapper {
+      display: grid;
+
+      .card__icon-wrapper--icon {
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      .card__icon {
+        color: $iconColor;
+        z-index: 1;
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
+        align-self: center;
+      }
+    }
+  }
+
+  .card__text-wrapper {
+    min-height: 170px;
+    max-width: fit-content;
+    padding: 1rem 0;
+    justify-content: stretch;
+    display: flex;
+    flex-direction: column;
+
+    .card__headline {
+      color: $primaryText;
+      font-size: 1.5rem;
+    }
+    .card__text {
+      color: $primaryText;
+      font-size: 1rem;
+      text-align: left;
+    }
+  }
+
+  .card__button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card__button {
+      background: $buttonGradient;
+      border: $border;
+      border-radius: $borderRadius;
+      color: $primaryText;
+      cursor: pointer;
+      font-size: 1rem;
+      padding: 0.25rem 1rem;
+      transition: all 0.3s ease;
+      box-shadow: $boxShadow;
+      &:hover {
+        text-decoration: underline;
+        background: $buttonGradientHover;
+      }
+    }
+
+    .card__button-two {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .card.card--warning .card__warning-wrapper .card__warning {
+    width: 33%;
+  }
+}
